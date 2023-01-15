@@ -26,7 +26,7 @@
           <li class="item"><a class="link" href="/">Contacts</a></li>
         </ul>
       </nav>
-      <button type="button" class="mobil-menu-open" data-menu-open>
+      <button type="button" class="mobil-menu-open js-open-menu" aria-expanded="false">
         <svg class="mobil-menu-open-icon" width="32" height="32">
           <use href="./images/symbol.svg#menu_btn"></use>
         </svg>
@@ -43,9 +43,9 @@
 
     <!--  Mobil menu-->
 
-    <div class="mobil-menu" data-menu>
+    <div class="mobil-menu js-menu-container">
       <div class="container mobil-menu_container">
-      <button class="mobil-menu_close-btn" data-menu-close>
+      <button class="mobil-menu_close-btn js-close-menu">
         <svg class="mobil-menu_close-icon"  width="8" height="8">
           <use href="./images/symbol.svg#icon-clos-modal"></use>
         </svg>
@@ -595,8 +595,14 @@
       </form>
      </div>
     </div>
-    <script src="./js/mobil-menu.js"></script>
+    
     <script src="./js/modal.js"></script>
-  
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

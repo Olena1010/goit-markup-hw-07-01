@@ -163,11 +163,13 @@ img {
   visibility: hidden;
   pointer-events: none;
   transition: var(--anim-fast);
+  transform: translateX(100%);
 }
 .mobil-menu.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  transform: translateX(0);
 }
 .mobil-menu_container {
   position: relative;
